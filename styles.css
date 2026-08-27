@@ -328,3 +328,41 @@ section{padding:5.5rem 1.5rem}
   .g-4,.g-5,.g-6{grid-column:span 3}
   .recognition-logos{grid-template-columns:1fr;max-width:260px}
 }
+/* Prevent horizontal scrolling */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* All images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Hero section */
+.hero {
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+/* Hero image */
+.hero img,
+#heroImg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Prevent containers from exceeding screen */
+section,
+.container,
+.hero-content {
+  max-width: 100%;
+  box-sizing: border-box;
+}
